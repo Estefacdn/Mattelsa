@@ -70,6 +70,7 @@
         android:layout_marginRight="50dp"
         android:layout_marginBottom="256dp"
         android:backgroundTint="@color/white"
+        android:onClick="onClick"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:text="@string/registro"

@@ -81,15 +81,17 @@
         app:srcCompat="@drawable/ic_cora_register_black" />
 
     <EditText
-        android:id="@+id/txtemail"
+        android:id="@+id/etEmail"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:text="@string/email"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,15 +99,17 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <EditText
-        android:id="@+id/txtcity"
+        android:id="@+id/etCity"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
+        android:hint="@string/city"
         android:inputType="textPersonName"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:text="@string/city"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,31 +117,17 @@
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <EditText
-        android:id="@+id/txtnameuser"
+        android:id="@+id/etidentification"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="@string/id"
+        android:inputType="number"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:text="@string/name_user"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/guideline10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline8" />
-
-    <EditText
-        android:id="@+id/txtcountry"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="15dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:text="@string/country"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,10 +135,30 @@
         app:layout_constraintTop_toTopOf="@+id/guideline12" />
 
     <EditText
-        android:id="@+id/txtpass"
+        android:id="@+id/etnameuser"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="@string/name_user"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -161,17 +171,17 @@
         app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/ckUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="48dp"
         android:text="Usuario"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.512" />
 
     <Button
         android:id="@+id/btncheckin"
@@ -179,11 +189,12 @@
         android:layout_height="0dp"
         android:layout_margin="20dp"
         android:backgroundTint="@color/principal_uno"
+        android:onClick="registerUser"
         android:paddingLeft="16dp"
         android:paddingTop="10dp"
         android:paddingRight="16dp"
         android:paddingBottom="10dp"
-        android:text="Registrarse"
+        android:text="@string/checkin"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
@@ -194,7 +205,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/ckEmployer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Colaborador"
@@ -202,9 +213,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toEndOf="@+id/ckUser"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.512" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

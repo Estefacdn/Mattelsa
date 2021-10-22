@@ -5,7 +5,7 @@
     <string name="registro">Registrar</string>
     <string name="name_user">Nombre Completo</string>
     <string name="email">Email</string>
-    <string name="country">Pais</string>
+    <string name="id">Cedula</string>
     <string name="city">Ciudad</string>
     <string name="password">Contraseña</string>
     <string name="rol">Rol</string>
