@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(view);
 
         mainBinding.btnsignin.setOnClickListener(this);
+        mainBinding.btnlogin.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnsignin:
                 Intent intent= new Intent(this,RegisterActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btnlogin:
+                Intent intent2= new Intent(this,SessionActivity.class);
+                startActivity(intent2);
                 break;
         }
 
