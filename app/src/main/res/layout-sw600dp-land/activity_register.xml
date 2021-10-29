@@ -8,10 +8,55 @@
     tools:context=".RegisterActivity">
 
     <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="450dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnameuser" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="450dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <CheckBox
+        android:id="@+id/ckEmployer"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Colaborador"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toEndOf="@+id/ckUser"
+        app:layout_constraintTop_toBottomOf="@+id/etidentification"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
         android:id="@+id/etidentification"
         android:layout_width="450dp"
         android:layout_height="70dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/id"
         android:inputType="number"
@@ -24,25 +69,11 @@
         app:layout_constraintTop_toBottomOf="@+id/etCity" />
 
     <EditText
-        android:id="@+id/etnameuser"
-        android:layout_width="450dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="104dp"
-        android:ems="10"
-        android:hint="@string/name_user"
-        android:inputType="textPersonName"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/etCity"
         android:layout_width="450dp"
         android:layout_height="70dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
         android:ems="10"
         android:hint="@string/city"
         android:inputType="textPersonName"
@@ -50,59 +81,42 @@
         android:paddingRight="25dp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toEndOf="@+id/etnameuser"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
     <EditText
-        android:id="@+id/etpassword"
+        android:id="@+id/etnameuser"
         android:layout_width="450dp"
         android:layout_height="70dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
+        android:hint="@string/name_user"
+        android:inputType="textPersonName"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toStartOf="@+id/etCity"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etidentification" />
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="450dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnameuser" />
+        app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
     <CheckBox
         android:id="@+id/ckUser"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="332dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
         android:text="Usuario"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etpassword" />
+        app:layout_constraintStart_toEndOf="@+id/etpassword"
+        app:layout_constraintTop_toBottomOf="@+id/etidentification"
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/btncheckin"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_margin="20dp"
         android:backgroundTint="@color/black"
         android:onClick="registerUser"
         android:paddingLeft="16dp"
@@ -114,29 +128,45 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline20" />
-
-    <CheckBox
-        android:id="@+id/ckEmployer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Colaborador"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.291"
-        app:layout_constraintStart_toEndOf="@+id/ckUser"
-        app:layout_constraintTop_toBottomOf="@+id/etpassword" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="0dp"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="188dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline27"
+        app:srcCompat="@drawable/corazonbg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

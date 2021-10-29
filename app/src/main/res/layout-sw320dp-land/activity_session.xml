@@ -19,14 +19,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.40" />
+        app:layout_constraintGuide_percent="0.38" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.77" />
+        app:layout_constraintGuide_percent="0.73" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline19"
@@ -39,43 +39,19 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="30dp"
+        android:layout_margin="15dp"
         android:backgroundTint="@color/black"
         android:paddingLeft="16dp"
         android:paddingTop="10dp"
         android:paddingRight="16dp"
         android:paddingBottom="10dp"
         android:text="@string/login"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline18"
-        app:layout_constraintVertical_bias="0.138" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:drawableLeft="@drawable/sobre_24"
-        android:drawablePadding="10dp"
-        android:drawingCacheQuality="auto"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline17"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -83,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="72dp"
-        android:drawableLeft="@drawable/llave_24"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@drawable/llave_18"
         android:drawablePadding="10dp"
         android:drawingCacheQuality="auto"
         android:ems="10"
@@ -92,24 +68,44 @@
         android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+        android:textSize="14sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:drawableLeft="@drawable/sobre_18"
+        android:drawablePadding="10dp"
+        android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.785" />
 
     <ImageView
         android:id="@+id/imgconejo"
-        android:layout_width="307dp"
-        android:layout_height="257dp"
-        android:padding="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline16"
-        app:layout_constraintVertical_bias="0.393"
-        app:srcCompat="@drawable/ic_conejillo"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/ic_conejillo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

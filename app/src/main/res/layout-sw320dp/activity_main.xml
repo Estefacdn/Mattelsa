@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.865" />
+        app:layout_constraintVertical_bias="0.943" />
 
     <Button
         android:id="@+id/btnsignin"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginBottom="156dp"
         android:backgroundTint="@color/white"
         android:onClick="onClick"
         android:paddingTop="20dp"
