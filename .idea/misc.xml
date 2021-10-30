@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw320dp-land/activity_register.xml" value="0.340625" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw320dp/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw320dp/activity_session.xml" value="0.36666666666666664" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw480dp-land/activity_register.xml" value="0.8175" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw480dp/activity_register.xml" value="0.88" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw600dp-land/activity_register.xml" value="0.340625" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw600dp/activity_register.xml" value="0.67" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw720dp-land/activity_register.xml" value="0.25546875" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout-sw720dp/activity_register.xml" value="0.275" />
+        <entry key="..\:/Intel/Mattelsa/app/src/main/res/layout/activity_main.xml" value="1.4071428571428573" />
         <entry key="..\:/Users/Estefania/AndroidStudioProjects/Mattelsa/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/Estefania/AndroidStudioProjects/Mattelsa/app/src/main/res/drawable/bg_color.xml" value="0.3828125" />
         <entry key="..\:/Users/Estefania/AndroidStudioProjects/Mattelsa/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
@@ -42,7 +53,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
