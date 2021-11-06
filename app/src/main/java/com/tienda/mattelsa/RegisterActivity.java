@@ -3,6 +3,7 @@ package com.tienda.mattelsa;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -42,5 +43,9 @@ public class RegisterActivity extends AppCompatActivity {
         long newUser = db.insert("users", null, userData);
         Toast.makeText(this, "" + newUser, Toast.LENGTH_SHORT).show();
 
+    }
+    public void goTolistUserActivity(View view){
+        Intent intent = new Intent(this,ListUserActivity.class);
+        startActivity(intent);
     }
 }

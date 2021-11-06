@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mattelsa">
         <activity
+            android:name=".ProfilesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListUserActivity"
+            android:exported="true" />
+        <activity
             android:name=".SessionActivity"
             android:exported="true" />
         <activity

@@ -11,6 +11,8 @@
     <string name="rol">Rol</string>
     <string name="checkin">Registrarse</string>
     <string name="login">Iniciar Sesión</string>
+    <string name="edit_user">Editar</string>
+    <string name="delete_user">Eliminar</string>
 
 
 </resources>
