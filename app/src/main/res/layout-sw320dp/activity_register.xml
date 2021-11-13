@@ -216,31 +216,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toEndOf="@+id/ckUser"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.487" />
 
     <CheckBox
         android:id="@+id/ckUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="80dp"
         android:text="Usuario"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goTolistUserActivity"
-        android:text="Button"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="549dp" />
+        app:layout_constraintVertical_bias="0.487" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

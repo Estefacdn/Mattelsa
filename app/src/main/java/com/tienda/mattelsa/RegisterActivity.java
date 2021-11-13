@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
         Toast.makeText(this, "" + newUser, Toast.LENGTH_SHORT).show();
 
     }
-    public void goTolistUserActivity(View view){
+    public void goToListUserActivity(View view){
         Intent intent = new Intent(this,ListUserActivity.class);
         startActivity(intent);
     }
