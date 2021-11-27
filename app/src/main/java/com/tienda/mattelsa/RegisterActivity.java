@@ -14,12 +14,11 @@ import com.tienda.mattelsa.databinding.ActivityRegisterBinding;
 public class RegisterActivity extends AppCompatActivity {
 
     private ActivityRegisterBinding registerBinding;
-    DbHelper dbHelper;
+    private DbHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
         registerBinding = ActivityRegisterBinding.inflate(getLayoutInflater());
         View view = registerBinding.getRoot();
         setContentView(view);
@@ -42,6 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
         userData.put("password",password);
         long newUser = db.insert("users", null, userData);
         Toast.makeText(this, "" + newUser, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, ProfilesActivity.class);
+        startActivity(intent);
 
     }
     public void goToListUserActivity(View view){

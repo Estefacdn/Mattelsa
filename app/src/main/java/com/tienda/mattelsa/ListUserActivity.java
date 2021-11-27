@@ -42,7 +42,7 @@ public class ListUserActivity extends AppCompatActivity  {
     public void listUsers(){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(
-                "SELECT * FROM users WHERE identification=123456",
+                "SELECT * FROM users",
                 null);
         if(cursor.getCount() > 0){
             while (cursor.moveToNext()){

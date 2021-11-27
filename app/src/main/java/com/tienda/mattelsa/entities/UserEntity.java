@@ -1,6 +1,8 @@
 package com.tienda.mattelsa.entities;
 
-public class UserEntity {
+import java.io.Serializable;
+
+public class UserEntity implements Serializable {
     private int id;
     private String name;
     private String email;
@@ -55,4 +57,6 @@ public class UserEntity {
     public void setCity(String city) {
         this.city = city;
     }
+
+
 }
